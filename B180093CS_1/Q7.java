@@ -16,8 +16,16 @@ class Q7 {
         Scanner scan = new Scanner(System.in);
         System.out.println("N: ");
         int N = scan.nextInt();
-        int[] array = fibonacci(N);
-        System.out.println(Arrays.toString(array));
+	if(N>1){
+        	int [] array = fibonacci(N);
+		System.out.println(Arrays.toString(array));
+	}
+	else{
+		if(N == 1)
+			System.out.println("[0]");
+		else
+			System.out.println("Invalid number");
+	}
         
     }
 }

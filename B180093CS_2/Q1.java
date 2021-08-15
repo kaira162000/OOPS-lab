@@ -29,8 +29,11 @@ class Q1 {
         ArrayList<Integer> arr;
         Scanner scan = new Scanner(System.in);
         arr = new ArrayList<Integer>();
-        for(int i=0; i<13; ++i) {
-            arr.add(scan.nextInt());
+        String S = scan.nextLine();
+        String[] list = S.split("[\\[\\],\\s]");
+        for(int i=0; i<list.length; ++i) {
+            if(!list[i].isEmpty())
+                arr.add(Integer.parseInt(list[i]));
         }
         System.out.println("The length of the original array is: " + arr.size());
         removeDuplicates(arr);

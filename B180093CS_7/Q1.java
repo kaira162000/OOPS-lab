@@ -12,6 +12,7 @@ public class Q1 {
             n2 = Integer.parseInt(b);
         } catch(NumberFormatException e) {
             System.out.println("NumberFormatException handled: Please enter valid numbers");
+            scan.close();
             return ;
         } 
         try {
@@ -25,8 +26,10 @@ public class Q1 {
             }
         } catch(ArithmeticException e) {
             System.out.println("ArithmeticException: Division by zero handled. Enter a valid argument.");
+            scan.close();
             return ;
         }
         System.out.println(ans);
+        scan.close();
     }
 }

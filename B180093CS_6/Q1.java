@@ -8,18 +8,8 @@ public class Q1{
         long b = scan.nextLong();
         long c = scan.nextLong();
         bank.balanceLeft(a, b, c);
+        scan.close();
     }
-}
-//An interface has only abstract methods & abstract attributes
-//so if there aren't defined by abstract keyword too, 
-//default would be taken as abstract and public
-//Java supports abstract methods and classes only
-//doesn't support abstract attributes.
-
-interface Conversion {
-    long convertRupees(long r);
-    long convertDollars(long r);
-    long convertPounds(long r);
 }
 
 //The class which implements the interface should 
@@ -50,4 +40,16 @@ class Bank implements Conversion {
         else
             System.out.println("Insufficient Balance");
     }
+}
+
+//An interface has only abstract methods & abstract attributes
+//so if there aren't defined by abstract keyword too, 
+//default would be taken as abstract and public
+//Java supports abstract methods and classes only
+//doesn't support abstract attributes.
+
+interface Conversion {
+    long convertRupees(long r);
+    long convertDollars(long r);
+    long convertPounds(long r);
 }

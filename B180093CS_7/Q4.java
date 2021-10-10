@@ -1,9 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-//confusion about input and the question itself actually
-//Incorrect input for input "dskf10", ie not multiple of 8
-
 public class Q4 {
     public static void main(String args[]) {
         Scanner scan = new Scanner(System.in);
